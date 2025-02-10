@@ -1,5 +1,7 @@
 #include<bits\stdc++.h>
 using namespace std;
+
+
 int name(int n , string user){
     if(n<=0){
         return 0;
@@ -72,11 +74,10 @@ int main(){
       }
 
       revers(nums , 0, n-1);
-      for(int i=0 ;i<n ;i++){
+      for(int i=0 ;i<n ;i++)
         cout << nums[i]<<" ";
       }
     cout<< "enter the string";
-  
     cin>> s;
     cout<< s.length()<<" ";
     pelidrom(s, 0 , s.length() -1);
