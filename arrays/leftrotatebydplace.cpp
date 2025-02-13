@@ -18,6 +18,8 @@ void leftrotatebydplace(vector<int> &nums , int d){
     } 
 }
 
+
+
 //optimal approch 
 void optimal(vector<int> &nums ,int d){
     int n =nums.size();
@@ -37,6 +39,7 @@ void printarr(vector<int> nums){
         cout<<nums[i]<<" ";
     }
 }
+
 
 int main(){
     vector<int> nums;

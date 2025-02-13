@@ -66,7 +66,7 @@ vector<int> unionoftwoarr(vector<int> &nums1 , vector<int> &nums2){
 }
 
 
-// union of two array 
+// union of two sorted  array 
 // optimal aproch {two pointer}
 
 vector<int> unionoftwo(vector<int> &nums1 , vector<int> &nums2){
@@ -109,12 +109,14 @@ while (j<n2)
     return ans ;
 }
 
+
+// intersection of two sorted array 
 vector<int> intersectionoftwoarr(vector<int> &nums1 , vector<int> &nums2){
     int n1= nums1.size() , n2 = nums2.size(), i =0 , j=0;
     vector<int> ans ; 
     while (i < n1 && j < n2 )
     {
-      if(nums1[i]==nums2[j]){
+      if(nums1[i]==nums2[j] && (ans.empty() || ans.back()!=nums1[i])){
         ans.push_back(nums1[i]);
         i++;
         j++;
@@ -132,6 +134,8 @@ vector<int> intersectionoftwoarr(vector<int> &nums1 , vector<int> &nums2){
     printarr(ans);
     return ans ;
 }
+
+
 
 
 int main(){
