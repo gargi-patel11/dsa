@@ -14,11 +14,9 @@ string smallestNumber(string pattern) {
     for(auto i :pattern){
         if(i=='D'){
             start +=1;
-            cout<<start <<" ";
         }
         else{
             start -=1;
-            cout << "else" << start <<" ";
         }
     }
     start+=1;
